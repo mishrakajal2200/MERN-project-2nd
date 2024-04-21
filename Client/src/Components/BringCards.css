@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust if needed */
+  }
+
+  .container{
+    text-align: center;
+    
+  }
+  .card{
+    margin: 20px; /* Adjust if needed */
+    display: inline-block;/* To ensure cards are aligned horizontally */
+    cursor: pointer;
+   
+  }
+  .card.selected {
+    border: 2px solid rgb(217, 112, 147); /* Change border color */ 
+  }
+  .finish-btn{
+    background-color:rgb(217, 112, 147);
+    padding: 10px;
+    width: 25%;
+    border-radius: 10px;
+    border: none;
+    color: #ffff;
+
+  }
+  .checkmark::before {
+    content: '\2713'; /* Unicode character for checkmark */
+    display: none; /* Initially hide the checkmark */
+  }
+  
+  .radio:checked + .checkmark::before {
+    display: inline-block; /* Display the checkmark when the radio button is checked */
+  }
+ @media (max-width:768px){
+  .header-section{
+    margin-top: 600px;
+  }
+ }
+ @media (max-width:576px){
+  .header-section{
+    margin-top: 600px;
+  }
+ }
+ 
+ 
+  
+  
+
+  
